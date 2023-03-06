@@ -1,0 +1,17 @@
+.icon {
+    color: inherit;
+    height: fit-content;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80px;
+  }
+  .icon p {
+    margin: 0;
+  }
+  .icon img {
+    padding-bottom: 0.25rem;
+    width: 70%;
+  }

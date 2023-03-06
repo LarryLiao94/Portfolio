@@ -1,13 +1,16 @@
-import {BrowserRouter} from "react-router-dom";
-import logo from './logo.svg';
-import './App.css';
-import { Desktop } from "./components/desktop/desktop";
+import { BrowserRouter } from "react-router-dom";
+import logo from "./logo.svg";
+import "./App.css";
+import Desktop from "./components/desktop/desktop";
+import { GlobalProvider } from "./GlobalContext";
 
 function App() {
   return (
-    <BrowserRouter>
-    <Desktop />
-    </BrowserRouter>
+    <GlobalProvider>
+      <BrowserRouter>
+        <Desktop />
+      </BrowserRouter>
+    </GlobalProvider>
   );
 }
 

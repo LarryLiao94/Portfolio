@@ -1,5 +1,16 @@
 .desktop {
     background-image: url("/home/larry/LARRYPROJECTS/windowsxp_portolio/my-portfolio/src/assets/windows-xp.png");
     background-size: cover;
-    height: 100vh;
+    height: unset;
+    min-height: 100vh;
+    flex-direction: column;
+    height: 95vh;
+    padding-top: 1rem;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
