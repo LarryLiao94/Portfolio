@@ -3,6 +3,8 @@ import aboutMeImage from "../../assets/about-me.png";
 import projects from "../../assets/projects.png";
 import calculator from "../../assets/calculator.png";
 import Icon from "../Icons.js/Icons";
+import TaskBar from "../taskbar";
+import XPWindow from "../Windows-Modals/modal";
 
 import "./desktop.css";
 
@@ -10,6 +12,7 @@ export default function Desktop() {
   const [showAboutModal, setShowAboutModal] = useState(false);
   const [showProjectsModal, setShowProjectsModal] = useState(false);
   const [showCalculatorModal, setShowCalculatorModal] = useState(false);
+  const [showMenu, setShowMenu] = useState(false);
 
   const handleAboutClick = () => {
     setShowAboutModal(true);
@@ -57,6 +60,22 @@ export default function Desktop() {
           imgSrc={calculator}
         />
       </div>
+      <TaskBar showMenu={showMenu} setShowMenu={setShowMenu} />
+      {showAboutModal && (
+        <XPWindow title="About Me" handleClose={handleAboutCloseClick}>
+          Hello I am Larry
+        </XPWindow>
+      )}
+      {showProjectsModal && (
+        <XPWindow title="Projects" handleClose={handleProjectsCloseClick}>
+          {/* Your Projects content goes here */}
+        </XPWindow>
+      )}
+      {showCalculatorModal && (
+        <XPWindow title="Calculator" handleClose={handleCalculatorCloseClick}>
+          {/* Your Calculator content goes here */}
+        </XPWindow>
+      )}
     </div>
   );
 }

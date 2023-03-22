@@ -4,8 +4,10 @@
     height: unset;
     min-height: 100vh;
     flex-direction: column;
-    height: 95vh;
     padding-top: 1rem;
+    position: relative;
+  height: 95vh;
+  overflow: hidden;
 }
 
 html,

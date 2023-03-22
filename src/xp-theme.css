@@ -1,0 +1,63 @@
+/* XP Theme Colors */
+:root {
+    --xp-bg: #0a4873;
+    --xp-start: #0078d7;
+    --xp-highlight: #c1d9ff;
+    --xp-accent: #154c91;
+    --xp-text: #ffffff;
+  }
+  
+  /* XP Taskbar */
+  .xp-taskbar {
+    position: absolute;
+    display: flex;
+    z-index: 100;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(
+      to bottom,
+      #245edb 0%,
+      #3f8cf3 9%,
+      #245edb 18%,
+      #245edb 92%,
+      #333 100%
+    );
+  }
+  
+  /* XP Start Button */
+  .xp-start-button {
+    position: relative;
+  display: inline-block;
+  font-size: 18px;
+  color: white;
+  font-style: italic;
+  padding: 5px 25px 5px 15px;
+  text-shadow: 1px 1px 1px #333;
+  border-radius: 0px 10px 15px 0px;
+  border: none;
+  transform: skewX(-3deg);
+  left: -5px;
+  background: radial-gradient(circle, #5eac56 0%, #3c873c 100%);
+  cursor: pointer;
+  }
+  
+  .xp-start-button img {
+    height: 20px;
+    margin-right: 5px;
+  }
+  
+  .xp-start-button:hover {
+    background-color: var(--xp-accent);
+  }
+
+  .timeContainer {
+    display: flex;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    color: white;
+    background-color: #1e90ff;
+    margin-left: auto;
+  padding-right: 10px;
+  }
