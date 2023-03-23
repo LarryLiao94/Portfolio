@@ -5,10 +5,12 @@ import calculator from "../../assets/calculator.png";
 import Icon from "../Icons.js/Icons";
 import TaskBar from "../taskbar";
 import XPWindow from "../Windows-Modals/modal";
+import GlobalContext from "../../GlobalContext";
 
 import "./desktop.css";
 
 export default function Desktop() {
+  const { pages, setPages, selected, setSelected } = useContext(GlobalContext);
   const [showAboutModal, setShowAboutModal] = useState(false);
   const [showProjectsModal, setShowProjectsModal] = useState(false);
   const [showCalculatorModal, setShowCalculatorModal] = useState(false);
